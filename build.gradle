@@ -46,6 +46,8 @@ allprojects {
         mockitoVersion = '1.10.19'
         mockserverVersion = '3.9.2'
     }
+//    脱离ext,直接设置版本信息,妈的,老子终于搞定eureka的版本了
+    version="1.9.13.cyzi"
 }
 
 subprojects {
