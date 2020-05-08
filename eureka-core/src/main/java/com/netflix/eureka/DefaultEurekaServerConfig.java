@@ -40,8 +40,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  *
- * A default implementation of eureka server configuration as required by
- * {@link EurekaServerConfig}.
+ * {@link EurekaServerConfig}要求的eureka服务器配置的默认实现.
  *
  * <p>
  * The information required for configuring eureka server is provided in a
@@ -121,7 +120,7 @@ public class DefaultEurekaServerConfig implements EurekaServerConfig {
         }
     }
 
-    /*
+    /**
      * (non-Javadoc)
      *
      * @see com.netflix.eureka.EurekaServerConfig#getAWSAccessId()

@@ -20,6 +20,8 @@ if (JavaVersion.current().isJava8Compatible()) {
     allprojects {
         tasks.withType(Javadoc) {
             options.addStringOption('Xdoclint:none', '-quiet')
+            // 生成javadoc时,中文字符会报错,添加下面这一行代码
+            options.encoding = "UTF-8"
         }
     }
 }
@@ -56,6 +58,8 @@ subprojects {
 
     sourceCompatibility = 1.8
     targetCompatibility = 1.8
+    // 修改项目的版本
+    version = "1.9.13-cyzi"
 
     repositories {
         jcenter()
